@@ -1,0 +1,112 @@
+{
+  "project_root": "/home/mw/project/雷霆医疗队",
+  "global_module_d_status": {
+    "causal_policy_effect_locked": false,
+    "policy_adaptation_engine_locked": true,
+    "causal_enhancement_layer_locked": true,
+    "randomized_experiment_style_strong_causality_locked": false,
+    "strict_quasi_causal_candidate_locked": true,
+    "advanced_quasi_causal_validation_locked": true,
+    "d6_extreme_quasi_causal_layer_locked": true,
+    "promotable_quasi_causal_paths": 1,
+    "directional_did_signals_p_lt_0_10": 5,
+    "advanced_core_candidate": {
+      "policy_id": "mpower_protect_smokefree_strong",
+      "policy_label": "MPOWER无烟环境保护强执行",
+      "outcome": "delta_dbd_smoking_per100k",
+      "wild_bootstrap_p": 0.05764411027568922,
+      "cohort_att_sd": -0.15349037619867772,
+      "cohort_att_p": 0.00391582636387121,
+      "threshold_direction_share": 0.6666666666666666,
+      "negative_control_pass_share": 1.0,
+      "mechanism_direction_share": 0.8571428571428571
+    },
+    "d6_top_candidate": {
+      "policy_id": "mpower_protect_smokefree_strong",
+      "policy_label": "MPOWER无烟环境保护强执行",
+      "policy_domain": "风险治理-控烟",
+      "outcome_column": "delta_dbd_smoking_per100k",
+      "outcome_label": "吸烟风险暴露负担年变化",
+      "outcome_family": "direct_risk_burden_change",
+      "d5_validation_score": 0.98,
+      "d5_tier": "准因果强候选",
+      "design_integrity_score": 0.9513333333333334,
+      "bias_sensitivity_score": 0.7149166200573138,
+      "mechanism_score": 0.7291666666666666,
+      "china_transfer_readiness_score": 0.9495505369361257,
+      "claim_precision_score": 1.0,
+      "d6_total_score": 0.8822942124366894,
+      "d6_grade": "金牌主证据",
+      "d6_claim_level": "可作为模块D最强主证据：严格准因果强候选，不称随机实验。",
+      "design_checks": 12,
+      "design_passes": 10,
+      "design_partials": 2,
+      "design_failures": 0,
+      "attenuation_fraction_needed_to_lose_p_lt_0_10": 0.42983324011462765,
+      "omitted_bias_sd_needed_to_flip_sign": 0.1169166866609867,
+      "matched_province_count": 31,
+      "mean_top_transfer_score": 0.7982021477445026,
+      "mechanism_note": "控烟路径有政策-暴露-风险负担-缺口机制链。",
+      "answer_line": "MPOWER无烟环境保护强执行 -> 吸烟风险暴露负担年变化：证据分=0.88，金牌主证据；可作为模块D最强主证据：严格准因果强候选，不称随机实验。",
+      "boundary_note": "控烟路径有政策事件和风险结果支撑，适合作为准因果主线；仍需避免随机实验表述。"
+    },
+    "d6_gold_main_evidence_candidates": 1,
+    "d6_silver_or_above_candidates": 3,
+    "lock_level": "模块D证据裁判与锁定层",
+    "scope": "global_sample_policy_pathways_policy_execution_service_coverage_scenario_simulation_d6_extreme_quasi_causal_adjudication_and_policy_optimization",
+    "non_tobacco_d5_pathway_hardened": true,
+    "non_tobacco_policy_domains": 5,
+    "strong_non_tobacco_candidates": 1,
+    "robust_or_adaptation_non_tobacco_candidates": 5
+  },
+  "china_mapping_status": {
+    "status": "downstream_provincial_policy_adaptation_profile",
+    "is_evidence_for_global_d_lock": false,
+    "allowed_after_global_d4_plus": true,
+    "boundary": "China mapping consumes global D outputs and adds provincial response evidence; it does not prove provincial health-outcome causality or the global policy effect.",
+    "china_mapping_definition": "中国省级映射v7；使用NBS省级卫生人员/机构、七普人口与年龄、ScienceDB 2000-2024城市PM2.5并用2020地级市人口权重省级聚合、SatPM 2000-2017省级PM2.5基线、GBD 2017省级疾病负担与风险SEV、GBD 2021省级NCD年龄标化死亡率/DALY健康结局锚点、NHSA DRG/DIP省级政策暴露时间线与资源响应准因果候选检验、NHC国家慢病综合防控示范区执行强度、地方政策执行指标、NBS 2018/2019/2021-2024分省粗死亡率OCR健康结局敏感性面板、NBS 2025年鉴城镇化/GDP OCR解释变量，并补NBS床位/医保/基金收支字段级OCR质控，生成省级压力-响应-缺口和D层组合政策响应画像。",
+    "china_chronic_policy_execution_available": true,
+    "nbs2025_explanatory_candidate_available": true,
+    "nbs_mortality_panel_available": true,
+    "nbs_mortality_panel_included_years": [],
+    "nbs_health_outcome_sensitivity_rows": 10,
+    "c_layer_ocr_qc_high_confidence_rows": 19,
+    "c_layer_ocr_field_level_qc_completed": true,
+    "c_layer_ocr_unresolved_manual_review_blockers": 0,
+    "gbd2021_freshness_bridge_available": true,
+    "gbd2021_freshness_bridge_spearman_r": 0.44193548387096776,
+    "health_outcome_anchor_available": true,
+    "health_outcome_anchor_rows": 31,
+    "china_local_policy_execution_indicator_available": true,
+    "china_local_policy_scored_domains": [
+      "医保支付改革",
+      "慢病综合防控"
+    ],
+    "china_local_policy_national_milestone_domains": [
+      "家庭医生签约",
+      "分级诊疗",
+      "健康促进/健康城市"
+    ]
+  },
+  "can_claim": [
+    "模块D已经升级为模块D证据裁判与锁定层：在准因果增强层和多政策路径组合层基础上统一评分设计完整性、偏误敏感性、机制链、迁移适配和声明边界。",
+    "模块D已经升级为模块D准因果增强层高级稳健性准因果政策适配引擎：基于A/B/C结果、WHO NCD国家能力/服务覆盖、WHO MPOWER六分项和World Bank WDI烟草结果变量，输出政策路径、资源提升情景、风险下降情景和服务覆盖补齐情景。",
+    "模块D准因果增强层基础部分新增政策事件库、交错DID、事件研究、安慰剂检验、合成控制、低秩矩阵补全和组合政策模拟。",
+    "MPOWER无烟环境保护强执行对吸烟风险暴露负担年变化下降形成严格准因果强候选，但不写成随机实验式强因果。",
+    "模块D准因果增强层高级稳健性已补充wild cluster bootstrap、cohort-robust ATT、阈值/滞后敏感性、假结果检验和政策-暴露-负担-缺口机制链。",
+    "模块D多政策路径组合层已补非控烟路径硬化：高血压服务覆盖形成1条非控烟准因果强候选，基层NCD连续服务、综合治理能力和控盐膳食形成政策包适配证据，不再只依赖控烟。",
+    "模块D证据裁判与锁定层最强路径可称为金牌主证据或严格准因果强候选；服务覆盖强候选只说明响应能力改善，不直接等同死亡率或DALY下降。",
+    "中国映射是全球模块D准因果增强层的应用层，已接入NHSA DRG/DIP、NHC慢病示范区执行强度、地方政策执行指标、GBD2021年龄标化NCD健康结局锚点、NBS多年粗死亡率健康结局敏感性、NBS解释变量和C层字段级OCR QC，用于展示迁移和情景建议，不反向证明世界模块D。"
+  ],
+  "cannot_claim": [
+    "不能说模块D证据裁判与锁定层已经达到随机实验式强因果。",
+    "不能说中国省级政策已经因果证明降低死亡率或DALY；GBD2021是年龄标化健康结局锚点，NBS粗死亡率只能作为敏感性/边界检验。",
+    "不能用中国映射替代全球模块D的证据链。"
+  ],
+  "critical_failures": [],
+  "output_files": {
+    "checklist": "/home/mw/project/雷霆医疗队/06_report_assets/c_module_d_policy/module_d_lock_checklist.csv",
+    "summary": "/home/mw/project/雷霆医疗队/06_report_assets/c_module_d_policy/module_d_lock_status.json",
+    "statement": "/home/mw/project/雷霆医疗队/06_report_assets/c_module_d_policy/module_d_lock_statement.md"
+  }
+}

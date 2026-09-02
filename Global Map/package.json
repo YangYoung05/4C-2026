@@ -1,0 +1,39 @@
+{
+  "name": "global-map",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "data": "node scripts/build-data.mjs",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "verify": "npm run data && npm run lint && npm run build"
+  },
+  "dependencies": {
+    "animejs": "^4.4.1",
+    "csv-parse": "^6.2.1",
+    "d3-geo": "^3.1.1",
+    "i18n-iso-countries": "^7.14.0",
+    "lucide-react": "^1.17.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-globe.gl": "^2.38.0",
+    "three": "^0.184.0",
+    "topojson-client": "^3.1.0",
+    "world-atlas": "^2.0.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.15.0",
+    "@types/react": "^18.2.79",
+    "@types/react-dom": "^18.2.25",
+    "@vitejs/plugin-react": "^4.7.0",
+    "eslint": "^9.15.0",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-refresh": "^0.5.2",
+    "globals": "^17.6.0",
+    "vite": "^6.4.3"
+  }
+}

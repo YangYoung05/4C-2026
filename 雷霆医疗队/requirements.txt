@@ -1,0 +1,25 @@
+# 全球健康转型中的暴露-负担-响应失配诊断
+# 2026 4C 大数据竞赛 · 雷霆医疗队
+# Python 依赖包列表
+
+# 核心数据处理
+pandas>=1.5.0
+numpy>=1.23.0
+
+# 可视化
+matplotlib>=3.6.0
+seaborn>=0.12.0
+
+# 统计与机器学习
+scipy>=1.10.0
+scikit-learn>=1.1.0
+
+# 地图与空间数据
+geopandas>=0.12.0
+
+# PDF/表格读取
+pdfplumber>=0.9.0
+openpyxl>=3.0.0
+
+# 图像文件兼容
+Pillow>=9.0.0
